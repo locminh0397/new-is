@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "infomations",
+  "info": {
+    "singularName": "infomation",
+    "pluralName": "infomations",
+    "displayName": "Thông tin liên hệ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Phone": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Address": {
+      "type": "text",
+      "required": true
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Slogan": {
+      "type": "string",
+      "required": true
+    },
+    "PhoneHref": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

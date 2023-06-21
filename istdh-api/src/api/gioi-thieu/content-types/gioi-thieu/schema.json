@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gioi_thieus",
+  "info": {
+    "singularName": "gioi-thieu",
+    "pluralName": "gioi-thieus",
+    "displayName": "Giới thiệu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Slug": {
+      "pluginOptions": {},
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Contents": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
+    }
+  }
+}
